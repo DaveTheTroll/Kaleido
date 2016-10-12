@@ -9,4 +9,5 @@ import views
 urlpatterns = [
     url(r'^$', views.index, name='index'),
     url(r'^all', views.all, name='all'),
+    url(r'^game/(?P<players>[0-9]+)', views.game, name='game'),
 ]
