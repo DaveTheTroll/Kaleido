@@ -70,6 +70,7 @@ h2 {
 		<script>
 $(document).ready(function() {
 	ajaxSetup();
+	alert($.cookie('csrftoken'));
 	
 	$(".card")
 		.mousedown(function() {
