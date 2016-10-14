@@ -17,8 +17,12 @@ def game(request, players):
     kgame = Game()
     for _ in range(int(players)):
         kgame.newPlayer()
-    kgame.start()
     
     return render(request, 'kaleido/game.html',
                   context={'game':kgame,
                            'colors':colors})
+    
+def cardClick(request):
+    print request.POST["card"]
+#    print request.POST['card']
+    return HttpResponse('')
